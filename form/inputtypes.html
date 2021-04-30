@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Password field</h2>
+
+<p>The <strong>input type="password"</strong> defines a password field:</p>
+
+<form action="/action_page.php">
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>The characters in a password field are masked (shown as asterisks or circles).</p>
+
+<h2>Reset Button</h2>
+
+<p>The <strong>input type="reset"</strong> defines a reset button that resets all form values to their default values:</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form> 
+<h2>Show a Color Picker</h2>
+
+<p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+
+<form action="/action_page.php">
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+  <input type="submit" value="Submit">
+</form>
+
+<p><b>Note:</b> type="color" is not supported in Internet Explorer 11 or Safari 9.1 (or earlier).</p>
+
+<p>If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.</p>
+
+<h2>Date Field Restrictions</h2>
+
+<p>Use the min and max attributes to add restrictions to dates:</p>
+
+<form action="/action_page.php">
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="datetime-local" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> type="date" is not supported in Safari or Internet Explorer 11 (or earlier).</p>
+
+<h1>File upload</h1>
+
+<p>Show a file-select field which allows a file to be chosen for upload:</p>
+<form action="/action_page.php">
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<h2>Number Field</h2>
+
+<p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+
+<p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+
+<form action="/action_page.php">
+  <label for="quantity">Quantity (between -1 and 10):</label>
+  <input type="number" id="quantity" name="quantity" min="-1" max="10">
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Numeric Steps</h2>
+
+<p>Depending on browser support: Fixed steps will apply in the input field.</p>
+
+<form action="/action_page.php">
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+  <input type="submit" value="Submit">
+</form>
+<h2>Range Field</h2>
+
+<p>Depending on browser support: The input type "range" can be displayed as a slider control.<p>
+
+<form action="/action_page.php" method="get">
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+
+</body>
+</html>
